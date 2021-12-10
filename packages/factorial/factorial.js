@@ -12,6 +12,7 @@ export default function factorial() {
         for(i=0;i<=num;i++){
             fact =mul(fact,i);
         }
-        console.log(`The factorial of ${num} is ${fact}.`);
+        console.log(`The factorial of ${num} is ${fact}.`);        
     }
+    
 }
