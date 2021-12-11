@@ -1,0 +1,10 @@
+{
+    "$schema": "https://storage.googleapis.com/jscratesmanager.appspot.com/schema/v/1/package-meta.json",
+    "name": "@jscrates/factorial",
+    "description": "Contains a set of common mathematical operations.",
+    "version": "0.0.1",
+    "author": { "name": "Team JSCrates", "url": "https://github.com/jscrates" },
+    "homepage": "https://github.com/jscrates/packages",
+    "license": "MIT"
+}
+  
