@@ -1,5 +1,5 @@
 
-let recursiveFunction = function (arr, x, start, end) {
+let binarySearch = function (arr, x, start, end) {
 	
 	// Base Condition
 	if (start > end) return false;
@@ -13,12 +13,14 @@ let recursiveFunction = function (arr, x, start, end) {
 	// If element at mid is greater than x,
 	// search in the left half of mid
 	if(arr[mid] > x)
-		return recursiveFunction(arr, x, start, mid-1);
+		return binarySearch(arr, x, start, mid-1);
 	else
 
 		// If element at mid is smaller than x,
 		// search in the right half of mid
-		return recursiveFunction(arr, x, mid+1, end);
+		return binarySearch(arr, x, mid+1, end);
 }
+
+module.exports = binarySearch
 
 							
