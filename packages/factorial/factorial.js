@@ -1,5 +1,5 @@
 // import * from bodmas 
-export default function factorial() {
+module.exports = function factorial() {
     const num = parseInt(prompt('Enter a positive integer(negetive factorial does not exists)!'));
     if(num < 0){
         console.log('Error! Negetive factorial does not exists.');
