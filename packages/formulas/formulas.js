@@ -1,7 +1,7 @@
 
 //Phy
 //Speed/Velocity
-export function spd(){    
+function spd(){    
     // let pi = 3.141592;
     var s, d, t;    
     s = div(d,t);
@@ -9,35 +9,35 @@ export function spd(){
 }
 
 //Acceleration
-export function acc(){
+function acc(){
     var a, s1, s2, t;
     a = div(sub(s1,s2),t);
     return a;    
 }
 
 //Momentum
-export function momen(){
+function momen(){
     var p, m, v;
     p = mul(m,v);
     return p;
 }
 
 //Centripital Force
-export function centri(){
+function centri(){
     var fbasec, m, v, r;
     fbasec = div(mul(m,sqr(v)),r);
     return fbasec;
 }
 
 //Kinetic Energy
-export function kinetic(){
+function kinetic(){
     var K,m,v;
     K = 0.5*mul(m,sqr(v));
     return K;
 }
 
 //Gravitational Force
-export function gravif(){
+function gravif(){
 
     let g = mul(6.673,div(10,pow(-11)));
     var F, m1, m2, r;
@@ -46,7 +46,7 @@ export function gravif(){
 }
 
 //Potential Energy
-export function potential(){
+function potential(){
     let M = mul(3.986,pow(10,14));
     var U, g, m, r;
     U = div(mul(g,M,m),r);
@@ -54,7 +54,7 @@ export function potential(){
 }
 
 //gravitational Acceleration
-export function gacc(){
+function gacc(){
     let G = mul(6.673,div(10,pow(-11)));
     let M = mul(3.986,pow(10,14));
     let R = pow(6.38,pow(10,6));
@@ -64,21 +64,21 @@ export function gacc(){
 }
 
 //Surface Tension
-export function surten(){
+function surten(){
     var S, F, l;
     S = div(F,l);
     return S;
 }
 
 //Frequency
-export function freq(){
+function freq(){
     var lam, t;
     lam = div(1,t);
     return lam;
 }
 
 //Capacitance
-export function capacitance(){
+function capacitance(){
     var C, q, V;
     C = div(q,V);
     return C;
@@ -86,7 +86,7 @@ export function capacitance(){
 
 //Chem
 //De-Broglie's
-export function debrog(){
+function debrog(){
     let h = mul(6.626,pow(10,-34));
     var lam, m, c;
     lam = div(h,mul(m,c));
@@ -94,10 +94,25 @@ export function debrog(){
 }
 
 //Atomic Structure
-export function atmstruct(){
+function atmstruct(){
     let h = mul(6.626,pow(10,-34));
     var E,v;
     E = mul(h,v);
     return E;
 }
 
+module.exports = {
+    spd,
+    acc,
+    momen,
+    centri,
+    kinetic,
+    gravif,
+    potential,
+    gacc,
+    surten,
+    freq,
+    capacitance,
+    debrog,
+    atmstruct
+}
