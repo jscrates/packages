@@ -13,3 +13,4 @@ function translatePigLatin(str) {
     }
 }
 console.log(translatePigLatin("aniket"));
+//
